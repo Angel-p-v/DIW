@@ -1,0 +1,109 @@
+:root {
+    --color-primary-50: #fdf2f8;
+    --color-primary-100: #fce7f3;
+    --color-primary-200: #fbcfe8;
+    --color-primary-300: #f472b6;
+    --color-primary-400: #e83e8c;
+    --color-primary-500: #b8296b;
+    --color-primary-600: #9d1f59;
+    --color-primary-700: #831849;
+    --color-primary-800: #5c1033;
+    --color-primary-900: #3b0820;
+
+    --color-neutral-50: #f8fafc;
+    --color-neutral-100: #e2e8f0;
+    --color-neutral-200: #cbd5e1;
+    --color-neutral-300: #94a3b8;
+    --color-neutral-400: #64748b;
+    --color-neutral-500: #475569;
+    --color-neutral-600: #332940;
+    --color-neutral-700: #26232b;
+    --color-neutral-800: #1a0d2b;
+    --color-neutral-900: #11071f;
+
+    --color-accent-oklch: oklch(0.55 0.21 350);
+
+    --bg-page: var(--color-neutral-900);
+    --bg-card: var(--color-neutral-700);
+    --bg-nav: #d3bfe6;
+    --text-main: var(--color-neutral-50);
+    --text-muted: var(--color-neutral-300);
+    --border-subtle: var(--color-neutral-600);
+    --brand: var(--color-primary-500);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 393px;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+}
+
+.badge {
+    display: inline-block;
+    margin: 16px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--color-accent-oklch);
+    color: var(--text-main);
+}
+
+article.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 16px;
+
+    img {
+        display: block;
+        max-height: 200px;
+        width: auto;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+    h2 {
+        margin: 8px 0 4px;
+        color: var(--text-main);
+    }
+
+    .author {
+        margin: 0 0 8px;
+        color: var(--text-muted);
+    }
+
+    .price {
+        margin: 0 0 12px;
+        font-weight: bold;
+        color: var(--text-main);
+    }
+
+    button {
+        width: 100%;
+        background-color: var(--brand);
+        color: var(--text-main);
+        border: none;
+        padding: 8px;
+        border-radius: 6px;
+    }
+}
+
+nav {
+    margin-top: auto;
+    background-color: var(--bg-nav);
+    border-top: 1px solid var(--border-subtle);
+    padding: 12px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+}

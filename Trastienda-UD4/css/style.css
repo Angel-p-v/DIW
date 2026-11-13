@@ -1,0 +1,27 @@
+h1 {
+    font-size: 50px;
+    color: blue;
+}
+
+body {
+    font-size: 15px;
+    color: black;
+}
+
+section {
+    font-size: 15px;
+    color: black;
+    background-color: lightgray;
+}
+
+article {
+    font-size: 15px;
+    color: black;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+article img {
+    width: 100px;
+    height: 100px;
+}
